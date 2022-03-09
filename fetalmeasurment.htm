@@ -1,0 +1,279 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+
+
+<link href="charts%20%20%20%D9%87%D8%A7%D9%85%D9%85_files/default.css" type="text/css" rel="stylesheet">
+
+
+<title>Fetus Growth Measurement Percentile Charts Graphs Calculator for 
+Fetal Weeks Gestation, Fetal Weight, Growth Percentile EFW CRL MSD BPD 
+OFD HC AC FL HL, Ultrasound sonogram scans</title>
+<meta name="description" content="How big or small is baby size Fetus Growth Measurement Percentiles charts and graphs Gestation weeks age Calculator Fetal Growth Fetal Weight Percentile Calculator EFW CRL MSD BPD OFD HC AC FL HL Charts for NT Level II Anomaly targeted scan First Second Trimester Ultrasound sonogram in Pregnancy Obstetrics">
+<meta name="keywords" content=" Percentile, growth chart, Fetus, Fetal, Fetal Weeks, Gestation, age, Calculator, Growth, EFW CRL, MSD, BPD, OFD, HC, AC, FL, HL, Measurements, Measurement, Charts, Chart, level II, dating, anomaly, targeted, scan, translucency, test, nasal, bone, Ultrasound, Ultrasonography, Antenatal, sonogram, ultrasonogram, scan, Obstetrics, due date, duedate, development, pregnancy, pregnant, info, information, baby,">
+<meta name="language" content="en">
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<meta name="subject" content="Fetus Growth Measurement Charts for Anomaly, Targeted, First Second Trimester or Level II Ultrasonography sonogram ultrasonogram ultasound used in Pregnancy Obstetrics - Baby2see.com">
+<meta name="abstract" content="Fetus Growth Measurement Percentile Charts for Anomaly, Targeted, First Second Trimester or Level II Ultrasonography sonogram ultrasonogram or ultrasound has become a very useful diagnostic tool in Antenatal Obstetrics">
+<meta name="revisit-after" content="25 days">
+<meta name="rating" content="general">
+<meta name="distribution" content="global">
+<meta name="googlebot" content="index,follow">
+<meta name="robots" content="index,follow">
+<style type="text/css">
+<!--
+@import "../bb.css"; 
+    -->
+</style>
+<link rel="shortcut icon" href="http://www.baby2see.com/favicon.ico">
+<link rel="stylesheet" href="charts%20%20%20%D9%87%D8%A7%D9%85%D9%85_files/wb_print.css" type="text/css" media="print">
+<script language="JavaScript">
+
+function isanumber(number){
+var answer=1
+for(var i=0; i<number.length; i++){
+if ((number.charAt(i) != "0") && !parseFloat(number.charAt(i))){
+answer=0
+break
+}}
+return answer
+}
+
+function poczatek(){
+document.BPDform.Item1.value=""
+document.BPDform.Item.value=""
+document.ACform.Item1.value=""
+document.ACform.Item.value=""
+document.FLform.Item1.value=""
+document.FLform.Item.value=""
+document.HCform.Item1.value=""
+document.HCform.Item.value=""
+}
+
+function BPD(){
+var wiekBPD=0.0
+var x=0.0
+entry=(document.BPDform.Item.value)
+if (isanumber(entry)==1){
+x=entry/10.0
+wiekBPD=0.008821*x*x*x-0.000787*x*x+2.6392*x+6.8819
+if(x==0.0){wiekBPD=0.0}
+if(wiekBPD<50.0 && wiekBPD>8.0){
+document.BPDform.Item1.value=parseFloat(wiekBPD)
+}else{document.BPDform.Item1.value="err"}
+}else{
+document.BPDform.Item1.value="err"
+window.alert("PLease enter a numeric value.")	
+}}
+
+function HC(){
+var wiekHC=0.0
+var x=0.0
+entry=(document.HCform.Item.value)
+if (isanumber(entry)==1){
+x=entry
+wiekHC=-0.0000010957*x*x*x+0.0008462*x*x-0.09887*x+17.906
+if(x==0.0){wiekHC=0.0}
+if(wiekHC<50.0 && wiekHC>8.0){
+document.HCform.Item1.value=parseFloat(wiekHC)
+}else{document.HCform.Item1.value="err"}
+}else{
+document.HCform.Item1.value="err"
+window.alert("PLease enter a numeric value.")	
+}}
+
+function AC(){
+var wiekAC=0.0
+var x=0.0
+entry=(document.ACform.Item.value)
+if (isanumber(entry)==1){
+x=entry
+wiekAC=0.000075425*x*x+0.06019*x+9.2207
+if(x==0.0){wiekAC=0.0}
+if(wiekAC<50.0 && wiekAC>8.0){
+document.ACform.Item1.value=parseFloat(wiekAC)
+}else{document.ACform.Item1.value="err"}
+}else{
+document.ACform.Item1.value="err"
+window.alert("PLease enter a numeric value.")	
+}}
+
+function FL(){
+var wiekFL=0.0
+var x=0.0
+entry=(document.FLform.Item.value)
+if (isanumber(entry)==1){
+ x=entry
+ wiekFL=0.002182*x*x+0.2094*x+10.693
+ if(x==0){wiekFL=0.0}
+ if(wiekFL<50.0 && wiekFL>8){
+  document.FLform.Item1.value=parseFloat(wiekFL)
+}else{document.FLform.Item1.value="err"}
+}else{
+ document.FLform.Item1.value="err"
+ window.alert("PLease enter a numeric value.")	
+}}
+
+</script>
+<script type="text/javascript">
+<!--  Hide
+//var example1="The calculation uses the formula proposed by Shephard et al. Estimated fetal weight (FW in Kg, BPD and AC in mm) Log10(eFW)=-1.7492+(0.0166*BPD)+(0.0046*AC)-2.646*(BPDxAC)/1000 "
+function test1(form) {
+form.text3.value =Math.pow(10,(-1.7492+(0.0166*form.BPD.value)+(0.0046*form.ABDO.value)-(2.646*(form.BPD.value*form.ABDO.value)/100000)))
+form.text3.value=100000*form.text3.value
+form.text3.value=Math.round(form.text3.value)/100
+form.text5.value=Math.round(form.text3.value*3.53)/100
+form.text6.value=Math.round((form.text3.value*3.53)/16)/100
+if (form.BPD.value == ""  || form.ABDO== "")
+{form.text3.value=0;form.text5.value=0;form.text6.value=0
+};
+//form.text4.value = example1
+ }
+// -->
+</script>
+<script type="text/javascript">
+<!-- 
+function getresults()
+{
+var grams;
+var total_ounces;
+var pounds;
+var ounces;
+var stones;
+var pounds2;
+var ounces2;
+var remainder;
+var remainder2;
+
+grams = document.myForm.grams.value;
+total_ounces = Math.floor(grams/28.343495231);
+pounds = Math.floor(total_ounces/16);
+ounces = Math.floor(total_ounces - (pounds * 16));
+stones = Math.floor(total_ounces/224);
+remainder = total_ounces - (stones * 224);
+pounds2 = Math.floor(remainder/16);
+ounces2 = remainder - (pounds2 * 16);
+document.myForm.pounds.value = pounds;
+document.myForm.ounces.value = ounces;
+document.myForm.stones.value = stones;
+document.myForm.pounds2.value = pounds2;
+document.myForm.ounces2.value = ounces2;
+}
+
+function getresults5()
+{
+var grams5;
+var temp1;
+var pounds;
+var ounces;
+var stones;
+var rounding;
+stones = document.myForm.stones5.value;
+ounces = document.myForm.ounces5.value;
+pounds = document.myForm.pounds5.value;
+temp1 = stones * 6350.29318 + pounds * 453.592 + ounces * 28.343495231;
+grams5 = Math.floor(temp1);
+document.myForm.grams5.value = grams5;
+
+}
+
+// end hide -->
+</script>
+
+<script type="text/javascript" src="charts%20%20%20%D9%87%D8%A7%D9%85%D9%85_files/bio.js"></script>
+<script language="javascript" type="text/javascript" src="charts%20%20%20%D9%87%D8%A7%D9%85%D9%85_files/randomquote.js"></script>
+<script type="text/javascript" src="charts%20%20%20%D9%87%D8%A7%D9%85%D9%85_files/topsy.js"></script>
+<script id="topsy_json_request-topsy_id0-19-3-1-3-1-1-5-4-1" src="charts%20%20%20%D9%87%D8%A7%D9%85%D9%85_files/retweet-json" type="text/javascript"></script><link href="charts%20%20%20%D9%87%D8%A7%D9%85%D9%85_files/widget.css" type="text/css" rel="stylesheet"></head><body><a name="top"></a>
+<!-- Fetus Growth Percentile Charts for Anomaly, Targeted, First Second Trimester or Level II 12 Week Scans fetal nuchal translucency test Downs syndrome nasal bone dating anomaly First Second Trimester Ultrasound NT sonogram in Pregnancy Obstetrics gestation weeks -->
+<div id="pageWrapper">
+<div id="masthead" class="inside">
+	<div id="innerColumnContainer">
+		<div id="SOWrap">
+			<div id="middleColumn">
+				<div class="inside"><a name="Measurement_Weeks_Calculator"></a>
+					<center><b><font size="5">&#1583;&#1603;&#1578;&#1608;&#1585; &#1605;&#1581;&#1605;&#1583; &#1605;&#1581;&#1605;&#1583; &#1575;&#1604;&#1581;&#1606;&#1575;&#1608;&#1609;</font></b><p>
+					<b><font size="5">&#1573;&#1587;&#1578;&#1588;&#1575;&#1585;&#1609;</font><font size="5"> &#1575;&#1604;&#1593;&#1602;&#1605; &#1608; 
+					&#1575;&#1604;&#1606;&#1587;&#1575;&#1569; &#1608;&#1575;&#1604;&#1578;&#1608;&#1604;&#1610;&#1583;</font></b></p>
+					<p><b><font size="5">&#1605;&#1589;&#1585; - &#1583;&#1605;&#1610;&#1575;&#1591;&nbsp; -&#1585;&#1571;&#1587; &#1575;&#1604;&#1576;&#1585;</font></b></p>
+					<hr>
+					<p><font size="5" color="#FF0000"><b>&#1602;&#1610;&#1575;&#1587;&#1575;&#1578; &#1575;&#1604;&#1580;&#1606;&#1610;&#1606; &#1576;&#1575;&#1604;&#1571;&#1588;&#1593;&#1577; 
+					&#1575;&#1604;&#1578;&#1604;&#1610;&#1601;&#1586;&#1610;&#1608;&#1606;&#1610;&#1577; </b></font></p>
+					<p><font size="5" color="#FF0000"><b>&#1604;&#1578;&#1581;&#1583;&#1610;&#1583; &#1593;&#1605;&#1585;&#1607; &#1608; &#1583;&#1585;&#1580;&#1577; &#1606;&#1605;&#1608;&#1607;</b></font></p>
+					<hr>
+					<table class="purpl" border="0" cellpadding="0" cellspacing="0" width="631" height="794">
+						<tbody>
+							<tr>
+								<td rowspan="4">&nbsp;&nbsp;</td>
+								<td align="left">
+								<div class="purplcat" align="center">
+									<h2><font color="#FF0000">Fetal Measurements = Weeks Calculator</font></h2>
+								</div></td>
+								<td rowspan="4" width="8">&nbsp;&nbsp;</td>
+							</tr>
+							<tr>
+								<td width="615" align="left" height="415">It is common to make at least 2 and often 4 or 5 measurements to estimate gestational age. 
+								<br>In most cases, <b>BPD</b> [Biparietal diameter], 
+								<b>HC</b> [Head circumference], <b>AC</b> [Abdominal circumference] and 
+								<b>FL</b> [Femur length] are used.<br><br>Since all of these measurements are strongly related to gestational age, it is not usually important how they are combined. 
+								<b><span style="color: rgb(0, 0, 255);">Normal 
+								<span style="font-size: large;">+/-</span> deviations </span></b><center>
+								<form name="BPDform" id="calc"><br><b>BPD in mm:</b>
+									<input name="Item" size="5" class="drop" type="text">
+									<input value="Enter" name="Enter" onclick="BPD()" class="drop3" type="button">
+&nbsp; <b>Gestational Age  =
+<input name="Item1" size="4" class="drop" type="text"> weeks </b>
+								</form>
+								<form name="HCform" id="calc"><br><b>HC in mm :</b>
+									<input name="Item" size="5" class="drop" type="text">
+									<input value="Enter" name="Enter" onclick="HC()" class="drop3" type="button">
+&nbsp; <b>Gestational Age  =
+<input name="Item1" size="4" class="drop" type="text"> weeks </b>
+								</form>
+								<form name="ACform" id="calc"><br><b>AC in mm :</b>
+									<input name="Item" size="5" class="drop" type="text">
+									<input value="Enter" name="Enter" onclick="AC()" class="drop3" type="button">
+&nbsp; <b>Gestational Age  =
+<input name="Item1" size="4" class="drop" type="text"> weeks </b>
+								</form>
+								<form name="FLform" id="calc"><br><b>FL in mm :</b>
+									<input name="Item" size="5" class="drop" type="text">
+									<input value="Enter" name="Enter" onclick="FL()" class="drop3" type="button">
+&nbsp; <b>Gestational Age  =
+<input name="Item1" size="4" class="drop" type="text"> weeks </b>
+								</form></center>
+								<p></p></td>
+							</tr>
+							<tr>
+								<td width="615" align="left" height="290">
+								<center>
+								<h3><font color="#FF0000">Estimated fetal weight calculator</font></h3>
+								</center>
+								<form id="calc">This calculator uses the most common ultrasound formula; proposed by Shephard et al. 
+									<br>Estimated fetal weight (eFW in Kg, BPD and AC in mm): 
+									<br><span class="code">Log<sup>10</sup>(eFW)= -1.7492+(0.0166*BPD)+(0.0046*AC)-2.646*(BPD*AC)/1000</span>
+									<p></p>
+									<div align="center"><strong>Enter a BPD and AC Measurement in mm:</strong><br>
+										<p style="color: rgb(0, 0, 255);">
+										<strong>BPD in mm = </strong>
+										<input name="BPD" size="6" class="drop" type="text"> &nbsp;&nbsp;&nbsp; 
+										<strong>AC in mm = </strong>
+										<input name="ABDO" size="6" class="drop" type="text"></p>
+										<input name="button1" value="Estimated Fetal Weight =" onclick="test1(this.form)" class="drop3" type="button"><p>
+										<input name="text3" size="6" class="drop" type="text">&nbsp;<strong>grams</strong><span style="color: rgb(0, 0, 255);">&nbsp; 
+										</span></p>
+									</div></form></td>
+							</tr>
+							<tr>
+								<td width="615" align="left">
+								<p align="center">
+								<img border="0" src="fetalmeaserment.JPG" width="774" height="770"></td>
+							</tr>
+						</tbody>
+					</table></center>
+					<a name="Fetal_Growth_Percentile"></a>
+					<a name="Growth_Percentile_Calculator"></a><center>
+					<hr><a target="_blank" href="index.html">
+					<span style="text-decoration: none; font-weight: 700">&#1585;&#1580;&#1608;&#1593;</span></a></center></div>
+			</div></div></div></div>
+		</div>
+
+	</body></html>

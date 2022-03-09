@@ -1,0 +1,52 @@
+: 1px solid #DDDDDD;
+    margin: 0 0 20px;
+}
+#e5_box_rev_newreturning table.e5_rowcolor2, #e5_box_rev_accept_recbill table.e5_rowcolor2, #e5_box_rev_additional table.e5_rowcolor2, #e5_box_rev_newsletter table.e5_rowcolor2, #e5_box_rev_dubious table.e5_rowcolor2, #e5_box_rev_legalnote table.e5_rowcolor2 {
+}
+#e5_box_rev_newreturning table.e5_rowcolor1, #e5_box_rev_accept_recbill table.e5_rowcolor1, #e5_box_rev_additional table.e5_rowcolor1, #e5_box_rev_newsletter table.e5_rowcolor1, #e5_box_rev_dubious table.e5_rowcolor1, #e5_box_rev_legalnote table.e5_rowcolor1 {
+    margin: 0 10px 10px !important;
+    width: 95%;
+}
+#e5_hdl_rev_new_username, #e5_hdl_rev_gen_username {
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+#e5_frm_send_login_mail, #e5_frm_set_cookie, #e5_frm_newsletterpub, #e5_frm_accept_legal_note {
+    background: none repeat scroll 0 0 transparent !important;
+    border: 0 none !important;
+    margin: 0 7px 0 0;
+    padding: 0 !important;
+}
+#e5_frm_coupon1 {
+    /*left: 180px;
+    position: relative;
+    top: -15px;*/
+	margin-top:10px;
+    width: 300px !important;
+}
+#e5_frm_button_order {
+    /*padding: 40px;*/
+	margin:20px auto 20px auto;
+	display:table;
+}
+#e5_hdl_fin_thank_you {
+    margin-top: 20px;
+}
+.e5_input_error, .e5_select_error {
+    background: none repeat scroll 0 0 #FFEFEF !important;
+    border: 1px solid #FF0000 !important;
+    color: #FF0000 !important;
+}
+#e5_err_cctype_id, #e5_err_dctype_id {
+    background-color: #F7F7F7;
+    border: 1px solid #CCCCCC;
+    color: #FF0000;
+    width: 170px;
+}
+#e5_err_dc_valid_from_month, #e5_err_dc_valid_from_year, #e5_err_dc_valid_till_month, #e5_err_dc_valid_till_year, #e5_err_cc_valid_month, #e5_err_cc_valid_year, #e5_err_cc_cvv, #e5_err_dc_issue {
+    background-color: #F7F7F7;
+    border: 1px solid #CCCCCC;
+    color: #FF0000;
+    width: 50px;
+}
+#e5_err_firstname, #e5_err_firstname_kana, #e5_err_b_firstname, #e5_err_lastname, #e5_err_lastname_kana, #e5_err_b_lastname, #e5_err_b_street1, #e5_err_d_street1, #e5_err_b_postalcode, #e5_err_d_postalcode, #e5_err_paymenttype_id option, #e5_err_b_city, #e5_err_d_city, #e5_err_email, #e5_err_b_email, #e5_err_email_confirm, #e5_err_b_email_confirm, #e5_err_paymenttype_id, #e5_err_currency_id, #e5_err_cc_no, #e5_err_dc_no, #e5_err_cc_holder_firstname, #e5_err_cc_holder_lastname, #e5_err_cc_holder_address1, #e5_err_cc_holder_country_id, #e5_err_cc_holder_state_id, #e5_err_cc_holder_city, #e5_err_cc_holder_address1, #e5_err_lsv
